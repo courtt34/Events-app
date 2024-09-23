@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --toastify-color-successs: rgb(17 24 39);
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success{
+    background: var(--toastify-color-successs) !important;
+}
+
+.Toastify__toast-theme--light{
+    color: white !important;
+    background: var(--toastify-color-successs) !important;
+}
