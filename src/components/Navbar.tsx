@@ -303,8 +303,8 @@ export default function Navbar() {
                             endDay = datesFound[3]
                             endDateYear = indexOfEndMonth < indexOfStartMonth ? currentYear + 1 : currentYear
                         }
-                        const startDate = new Date(currentYear, indexOfStartMonth, indexOfStartDay).toISOString()
-                        const endDate = new Date(endDateYear, endMonth, endDay).toISOString()
+                        const startDate = new Date(currentYear, indexOfStartMonth, indexOfStartDay,13).toISOString()
+                        const endDate = new Date(endDateYear, endMonth, endDay,14).toISOString()
                         data_to_upload.push({ title: j.title, description: j.description, address: j.address.join(' '), start: startDate, end: endDate, link: j.link, duration, distance, date: j.date.when })
                     }
                     resolve('done')
